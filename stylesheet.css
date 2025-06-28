@@ -1,0 +1,255 @@
+:root{
+    --lichtgroen: #527145;
+    --donkergroen: #183A37;
+    --lichte-achtergrond: #FFF3DE;
+    --oranje: #BB4E0F;
+    --donker-oranje: #510D0A;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--donkergroen);
+    background-color: #FFF3DE;
+    height: 100%;
+    /*background-image: url(images/background.jpg);
+    background-position: absolute;
+    top:0px;
+    background-repeat: no-repeat;*/
+}
+h1,h2,h3{
+  color: var(--lichtgroen);
+  font-family: 'Josefin Slab', serif; 
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 24px;
+}
+
+a{
+    color: var(--oranje);
+}
+a:visited{
+    color:var(--donker-oranje);
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color: #510D0A;
+    border: none;
+    color:#FFF3DE;
+}
+.btn-readmore{
+    background-color: #FFF3DE;
+}
+
+.btn-primary a,
+.btn-primary a:visited,
+a.btn-primary{
+    color:#FFF3DE;
+}
+a.btn-readmore{
+    color:#183A37;
+}
+
+.btn-primary:hover{
+    background-color: #BB4E0F;
+}
+
+/*Navigatiebalk*/
+.navbar{
+    background-color: #510D0A !important;
+    margin: 0px -12px 100px -12px !important;
+    padding: 30px;
+  }
+a.nav-link{
+    color:#FFF3DE;
+}
+.nav-link
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav-item{
+    padding:0 1vw 0 1vw;
+}
+
+.nav-item .nav-link.active,
+  .nav-item:hover{
+    background-color: #FFF3DE;
+    color:#510D0A;
+    text-decoration: underline;
+}
+.navbar-toggler{
+    background-color:#FFF3DE;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* FOOTER */
+footer{
+    margin: 50px -12px 0px -12px;
+    padding-right: 3em;
+
+}
+
+.zijbalk{
+    background-color: #510D0A;
+}
+
+.links-uitgelijnd{
+    text-align: left;
+}
+
+.rechts-uitgelijnd{
+    text-align: right;
+}
+
+.citaat{
+    font-family: 'Allura', Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+/*Voortgangsbalkjes CV*/
+.voortgangsbalk-rand{
+    width: 80%;
+    border: 1px solid #183A37;
+    border-radius: 5px;
+    margin:0.5em 0 1em 0;
+}
+.voortgang{
+    height: 10px;
+    background-color: #527145;
+}
+.skill-col{
+    width:33%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.ruimte-100-voor{
+    margin-top: 100px;
+}
+
+.ruimte-100-na{
+    margin-bottom: 100px;
+}
+
+/*Image slider*/
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+  }
+
+.slides-cv{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+.swiper-slide img {
+    display: block;
+    height: 350px;
+    width: 100%;
+    object-fit:cover;
+    object-position: top;
+  }
+
+  .swiper-slide.skill img{
+    height: 100px;
+    width: 100px;
+}
+
+.swiper-slide #pastor{
+    object-position: right;
+}
+
+/*Werkt dit?*/
+@media screen and (max--width:600px) {
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 200px;
+      }
+    .swiper-slide img {
+        display: block;
+        height: 200px;
+        width: 100%;
+        object-fit:cover;
+        object-position: top;
+      }
+}
+
+.visie-kaarten .card{
+    border: none;
+    background-color: transparent;
+}
+
+.visie-kaarten .card-header{
+    background-color:#FFF3DE !important;
+}
+
+#banner-ik-wil{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foto-hobby{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card-homepage{
+    min-height: 450px !important;
+}
+.card img{
+    height: 15rem;
+    object-fit: cover;
+}
+
+.card a{
+    background-color:#183A37;
+    color:#FFF3DE;
+}
+.card-text{
+    font-size: 0.9em;
+}
+
+.card-portfolio{
+    width: 20em;
+}
+
+.hobby-carousel{
+    height: 80vh;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.carousel-caption{
+    background-color: #183a37ae;
+}
