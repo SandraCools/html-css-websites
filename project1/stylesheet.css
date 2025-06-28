@@ -1,0 +1,367 @@
+:root{
+    --lichtgroen: #527145;
+    --donkergroen: #183A37;
+    --lichte-achtergrond: #FFF3DE;
+    --oranje: #BB4E0F;
+    --donker-oranje: #510D0A;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--donkergroen);
+    background-color: var(--lichte-achtergrond);
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:10%;
+    height: 100%;
+}
+h1,h2,h3{
+  color: var(--lichtgroen);
+  font-family: 'Josefin Slab', serif; 
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 24px;
+}
+
+a{
+    color: var(--oranje);
+}
+a:visited{
+    color:var(--donker-oranje);
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+a.download-cv{
+    color:#FFF3DE
+}
+a.download-cv:visited{
+    color:var(--lichte-achtergrond);
+}
+a.download-cv:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#logo{
+    height:80px;
+    margin: -10px 30px 0px 0px
+}
+
+#contact-button{
+    border: 1px solid var(--lichte-achtergrond);
+    position:absolute;
+    right:13%;
+}
+
+#profielfoto{
+    float: right;
+}
+#profielfoto-contact{
+    float: right;
+}
+
+.container{          
+    margin-top: 150px;
+    width: 100%;
+}
+
+button{
+    border: 4px solid var(--lichte-achtergrond);
+    background-color: var(--donker-oranje);
+    color:var(--lichte-achtergrond);
+    padding: 10px;
+    font-weight:bold;
+    cursor:pointer;
+    margin:20px;
+}
+.button-homepage{
+    border: 4px solid var(--oranje);
+    background-color: var(--lichte-achtergrond);
+    color:#183A37;
+    padding: 10px;
+    font-size: medium;
+    cursor:pointer;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.pagina-titel{
+    margin-top: 20px;
+}
+
+.text-home{
+    margin-right: 30%;
+    margin-top:20px;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+/*HEADER*/
+/*Hoe kan ik de hoogte van de header mee laten aanpassen als de menu-items naar 2 regels verspringen?*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    margin: -10px -13% 0 -13%;
+    background-color: #510D0A;
+    padding: 30px 33% 10px 10%;
+    align-items: center;
+    text-align: center;
+}
+header ul{
+    list-style-type: none;
+}
+header li{
+    float:left;
+}
+header li a {
+    display: block;
+    color: var(--lichte-achtergrond);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+header li a:visited{
+    color:var(--lichte-achtergrond)
+}
+header li a.active{
+    text-decoration: underline;
+    color: var(--donker-oranje);
+    background-color: var(--lichte-achtergrond);
+}
+
+.short-list{
+    list-style-type: square;
+} 
+
+.foto-hobby-rechts{
+    float: right;
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-left: 20px;
+    clear:both;
+}
+.foto-hobby-links{
+    float: left;
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+    clear: both;
+}
+
+.text-hobby{
+    min-height: 400px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.text-visie{
+    min-height: 150px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.links{
+    padding-right:20%;
+}
+
+.rechts{
+    text-align:right;
+    padding-left:20%;
+}
+
+/*Contactformulier*/
+#formulier-contact{
+    float:left;
+    width: 45%;
+}
+
+input, label, textarea{
+    display: block;
+}
+
+input, textarea{
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #FFF3DE;
+    border-left: 1px solid #510D0A;
+    border-bottom: 1px solid #510D0A;
+    border-top: none;
+    border-right: none;
+}
+
+#verzendknop{
+    font-family: 'Montserrat', sans-serif ;
+    margin: 10px;
+    padding: 3px;
+    background-color: #510D0A;
+    color:#FFF3DE;
+}
+#verzendknop:hover{
+    background-color: #BB4E0F;
+    font-weight: bold;
+    border: 2px solid #510D0A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#verzendknop:active{
+    background-color: #BB4E0F;
+}
+
+/*Social media*/
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:50px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  a.fa:visited{
+    color:var(--lichte-achtergrond);
+  }
+ 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #BB4E0F;
+    color: white;
+  }
+
+  /*Voortgangsbalkjes CV*/
+.voortgangsbalk-rand{
+    width: 80%;
+    border: 1px solid #183A37;
+    border-radius: 5px;
+    margin:0.5em 0 1em 0;
+}
+.voortgang{
+    height: 10px;
+    background-color: #527145;
+}
+
+/*2 kolommen*/
+.column {
+    float: left;
+  }
+  
+    /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.zijbalk-cv{
+    background-color: #510D0A;
+    color: #FFF3DE;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    margin-right: 20px;
+    display:grid;
+    justify-content: center;
+}
+
+.cv-sidebar-bold{
+    font-weight: bold;
+}
+#knop-cv{
+    width:50%;
+    background-color: var(--lichte-achtergrond);
+    color:var(--donker-oranje);
+    font-weight: 1000;
+    align-items: center;
+    padding:10px;
+    margin: 50px auto 130px auto;
+}
+#knop-cv:hover{
+   border: 2px solid var(--lichte-achtergrond);
+}
+
+.skill-col{
+    width:33%;
+    text-align: left;
+    font-weight: bold;
+}
+
+/*fancy tekst*/
+#citaat{
+    width: 30%;
+    float: right;
+    font-family:'Allura', sans-serif;
+    font-size: 24px;
+    text-align: right;
+    padding-top:10vh;
+    padding-left:15%;
+}
+
+.portfolio{
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+    margin:60px 30px 0px 30px;
+}
+a img{
+    cursor:pointer;
+}
+.portfolio-uitleg{
+    text-align: center;
+    max-width: 300px;
+    /*margin-left:10%;
+    margin-right: 10%;*/
+}
+
+/*PORTFOLIO*/
+.flex-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;
+}
+
+.portfolio-textblock{
+    text-align: center;
+    display:grid;
+    justify-content: center;
+}
+
+#banner-ik-wil{
+    width: 120%;
+    height: 300px;
+    margin-left:-10%;
+    margin-bottom: -10%;
+    object-fit: cover;
+    object-position: center;
+}
